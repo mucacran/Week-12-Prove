@@ -1,51 +1,49 @@
 namespace Week_12_Prove;
-using System.Collections.Generic;
 
 public class QueueException : Exception
 {
     public QueueException(string message) : base(message) { }
 }
 
-public class Node
-{
-    public int Data { get; set; }
-    public Node? Next { get; set; }
-    public Node? Prev { get; set; }
 
-    public Node(int data)
-    {
-        this.Data = data;
-    }
-}
 
-public class LLQueue
+public class Queue<T>
 {
     private LinkedList<T> _list;
-    private Node? head;
-    private Node? tail;
-    private int count;
 
-    public LLQueue()
+    public Queue()
     {
-        head = null;
-        tail = null;
-        count = 0;
+        _list = new LinkedList<T>();
     }
 
-    public void Enqueue(int data)
+    /// <summary>
+    /// Adds a new node at the back (i.e. the tail) of the linked list.
+    /// </summary>
+    public void Enqueue(T value)
     {
-        Node newNode = new Node(data);
-        if (head == null)
-        {
-            head = newNode;
-            tail = newNode;
-        }
-        else
-        {
-            tail!.Next = newNode; // Use the null-forgiving operator to avoid warning
-            newNode.Prev = tail;
-            tail = newNode;
-        }
-        count++;
+        //Create new node
+        _list.AddLast(value);
+    }
+
+    /// <summary>
+    /// Removes and returns the front item of the queue.
+    /// </summary>
+    public T Dequeue()
+    {
+        if (_list.Count == 0)
+            throw new QueueException("Queue is empty");
+        T value = _list.First!.Value;
+        _list.RemoveFirst();
+        return value;
+    }
+
+    /// <summary>
+    /// Returns the front item without removing it.
+    /// </summary>
+    public T Peek()
+    {
+        if (_list.Count == 0)
+            throw new QueueException("Queue is empty");
+        return _list.First!.Value;
     }
 }
