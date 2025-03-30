@@ -70,5 +70,21 @@ public class LLQueue<T>
         return _list.Count == 0;
     }
 
+    // contenido de la lista
+    public List<T> ToList()
+    {
+        List<T> list = new List<T>();
+
+
+        foreach (var item in _list)
+        {
+            list.Add(item);
+        }   
+
+        return list;
+
+    }
+       
+
 
 }

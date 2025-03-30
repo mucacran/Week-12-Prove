@@ -16,17 +16,13 @@ Console.WriteLine("Week 12 Prove: Final Project - LinkedList Queue");
 //LLQueueTests.Run();
 //LLQueuePerformance.Run();
 
-LLQueue<int> queue = new LLQueue<int>();
-queue.Enqueue(1);
-queue.Enqueue(2);
-queue.Enqueue(3);
-queue.Enqueue(4);
-queue.Enqueue(5);
-queue.Enqueue(6);
-queue.Enqueue(7);
-queue.Enqueue(8);
-queue.Enqueue(9);
-queue.Enqueue(10);
+LLQueue<T> queue = new LLQueue<T>();
+queue.Enqueue("100");
+queue.Enqueue("mama");
+queue.Enqueue("30");
+queue.Enqueue("4");
+queue.Enqueue("785");
+
 
 Console.WriteLine("Queue after enqueueing 10 elements:");
 
@@ -38,10 +34,10 @@ Console.WriteLine($"Queue is empty: {queue.IsEmpty}");
 
 
 //presentar todos los elementos de la lista
-Console.WriteLine("Dequeueing elements:");
-for (int i = 0; i < 10; i++)
+foreach (var item in queue.ToList())
 {
-    Console.WriteLine(queue.Dequeue());
+    Console.WriteLine(item);
 }
+
 Console.WriteLine("Queue after dequeueing all elements:");
 
