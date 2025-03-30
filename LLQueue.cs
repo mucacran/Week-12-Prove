@@ -7,11 +7,11 @@ public class QueueException : Exception
 
 
 
-public class Queue<T>
+public class LLQueue<T>
 {
     private LinkedList<T> _list;
 
-    public Queue()
+    public LLQueue()
     {
         _list = new LinkedList<T>();
     }
@@ -46,4 +46,29 @@ public class Queue<T>
             throw new QueueException("Queue is empty");
         return _list.First!.Value;
     }
+
+    /// <summary>
+    /// Checks if the item is in the queue.
+    /// </summary>
+    public bool Contains(T item)
+    {
+        return _list.Contains(item);
+    }
+
+    /// <summary>
+    /// Your queue implementation must also support a Size property that returns the number of elements in the queue.
+    /// </summary>
+    public int Size
+    {
+        get { return _list.Count; }
+    }
+    /// <summary>
+    /// Returns true if the queue is empty.
+    /// </summary>
+    public bool IsEmpty()
+    {
+        return _list.Count == 0;
+    }
+
+
 }
