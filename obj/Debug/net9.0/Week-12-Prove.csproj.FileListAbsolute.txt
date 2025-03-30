@@ -1,0 +1,15 @@
+F:\SERGIO\BYUi\2025\CSE212\Week-12-Prove\bin\Debug\net9.0\Week-12-Prove.exe
+F:\SERGIO\BYUi\2025\CSE212\Week-12-Prove\bin\Debug\net9.0\Week-12-Prove.deps.json
+F:\SERGIO\BYUi\2025\CSE212\Week-12-Prove\bin\Debug\net9.0\Week-12-Prove.runtimeconfig.json
+F:\SERGIO\BYUi\2025\CSE212\Week-12-Prove\bin\Debug\net9.0\Week-12-Prove.dll
+F:\SERGIO\BYUi\2025\CSE212\Week-12-Prove\bin\Debug\net9.0\Week-12-Prove.pdb
+F:\SERGIO\BYUi\2025\CSE212\Week-12-Prove\obj\Debug\net9.0\Week-12-Prove.GeneratedMSBuildEditorConfig.editorconfig
+F:\SERGIO\BYUi\2025\CSE212\Week-12-Prove\obj\Debug\net9.0\Week-12-Prove.AssemblyInfoInputs.cache
+F:\SERGIO\BYUi\2025\CSE212\Week-12-Prove\obj\Debug\net9.0\Week-12-Prove.AssemblyInfo.cs
+F:\SERGIO\BYUi\2025\CSE212\Week-12-Prove\obj\Debug\net9.0\Week-12-Prove.csproj.CoreCompileInputs.cache
+F:\SERGIO\BYUi\2025\CSE212\Week-12-Prove\obj\Debug\net9.0\Week-12-Prove.sourcelink.json
+F:\SERGIO\BYUi\2025\CSE212\Week-12-Prove\obj\Debug\net9.0\Week-12-Prove.dll
+F:\SERGIO\BYUi\2025\CSE212\Week-12-Prove\obj\Debug\net9.0\refint\Week-12-Prove.dll
+F:\SERGIO\BYUi\2025\CSE212\Week-12-Prove\obj\Debug\net9.0\Week-12-Prove.pdb
+F:\SERGIO\BYUi\2025\CSE212\Week-12-Prove\obj\Debug\net9.0\Week-12-Prove.genruntimeconfig.cache
+F:\SERGIO\BYUi\2025\CSE212\Week-12-Prove\obj\Debug\net9.0\ref\Week-12-Prove.dll
