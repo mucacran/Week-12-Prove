@@ -16,12 +16,12 @@ Console.WriteLine("Week 12 Prove: Final Project - LinkedList Queue");
 //LLQueueTests.Run();
 //LLQueuePerformance.Run();
 
-LLQueue<T> queue = new LLQueue<T>();
-queue.Enqueue("100");
-queue.Enqueue("mama");
-queue.Enqueue("30");
-queue.Enqueue("4");
-queue.Enqueue("785");
+LLQueue<object> queue = new LLQueue<object>();
+queue.Enqueue(1);
+queue.Enqueue(34);
+queue.Enqueue(123);
+queue.Enqueue(34567);
+queue.Enqueue(45);
 
 
 Console.WriteLine("Queue after enqueueing 10 elements:");
@@ -38,6 +38,10 @@ foreach (var item in queue.ToList())
 {
     Console.WriteLine(item);
 }
+
+// recorriencdo la lista y eliminando los elementos
+Console.WriteLine("Queue elements:");
+queue.PrintList();
 
 Console.WriteLine("Queue after dequeueing all elements:");
 

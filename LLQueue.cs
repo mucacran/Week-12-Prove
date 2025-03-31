@@ -84,6 +84,17 @@ public class LLQueue<T>
         return list;
 
     }
+
+    /// <summary>
+    /// traverse a list and print the elements
+    /// </summary>
+    public void PrintList()
+    {
+        foreach (var item in _list)
+        {
+            Console.WriteLine(item);
+        }
+    }
        
 
 
