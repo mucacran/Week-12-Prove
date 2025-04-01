@@ -5,15 +5,22 @@ public class QueueException : Exception
     public QueueException(string message) : base(message) { }
 }
 
-
-
 public class LLQueue<T>
 {
     private LinkedList<T> _list;
+    private int _capacity; // Maximum number of elements in the queue
+    public int Capacity => _capacity; // Property to get the capacity of the queue
 
     public LLQueue()
     {
         _list = new LinkedList<T>();
+        _capacity = int.MaxValue;
+    }
+
+    public LLQueue(int capacity)
+    {
+        _list = new LinkedList<T>();
+        _capacity = capacity;
     }
 
     /// <summary>
@@ -21,6 +28,9 @@ public class LLQueue<T>
     /// </summary>
     public void Enqueue(T value)
     {
+        if (_list.Count >= _capacity)
+            throw new QueueException("Queue is full");
+        //Check if the queue is full
         //Create new node
         _list.AddLast(value);
     }
